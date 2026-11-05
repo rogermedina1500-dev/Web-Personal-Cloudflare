@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Roger David Medina Gutiérrez — Técnico en Electrónica, Especialista en Mantenimiento Industrial y Desarrollador Full Stack en formación. Madrid, España." />
+  <title>Roger Medina | Portfolio Profesional</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Iconos SVG inline, sin dependencias externas -->
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo">RM<span class="dot">.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#propuesta">Valor</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#formacion">Formación</a>
+        <a href="#filosofia">Filosofía</a>
+        <a href="#contacto" class="nav-cta">Contacto</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Disponible para nuevas oportunidades
+      </span>
+      <h1 class="hero-name">Roger David<br /><span class="highlight">Medina Gutiérrez</span></h1>
+      <p class="hero-title">
+        <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-location">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Madrid, España
+      </p>
+      <p class="hero-tagline">Compromiso, capacidad técnica y mejora continua.</p>
+      <div class="hero-actions">
+        <a href="#contacto" class="btn btn-primary">Hablemos
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="#sobre-mi" class="btn btn-outline">Conoce más</a>
+      </div>
+      <!-- Redes sociales Hero -->
+      <div class="hero-social">
+        <a href="mailto:rogermedina1500@gmail.com" class="social-icon" aria-label="Email" title="rogermedina1500@gmail.com">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/roger-medina-33854640a/" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/rogermedina1500-dev" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SOBRE MÍ
+  ═══════════════════════════════════════ -->
+  <section class="section sobre-mi" id="sobre-mi">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 — Sobre mí</span>
+        <h2>Una trayectoria técnica<br /><span class="highlight">en constante evolución</span></h2>
+      </div>
+      <div class="sobre-mi-grid">
+        <div class="sobre-mi-text">
+          <p>Soy <strong>Roger David Medina Gutiérrez</strong>, Técnico Superior en Electrónica, con experiencia profesional en mantenimiento industrial, soporte técnico y análisis de procesos productivos. Me considero una persona responsable, disciplinada, proactiva y profundamente comprometida con cada actividad que realizo.</p>
+          <p>A lo largo de mi trayectoria he trabajado en entornos industriales exigentes: mantenimiento preventivo y correctivo de maquinaria, diagnóstico y resolución de averías, intervención en sistemas eléctricos y mecánicos, y análisis de procesos bajo estrictos estándares de calidad y seguridad.</p>
+          <p>Actualmente amplío mis conocimientos con una formación en <strong>Desarrollo Full Stack en ConquerBlocks</strong>, adquiriendo competencias en frontend, backend, bases de datos y control de versiones. Esta etapa refleja mi interés por evolucionar profesionalmente y explorar nuevas tecnologías.</p>
+          <p>No busco simplemente un puesto de trabajo; busco una oportunidad para <strong>demostrar mi capacidad, aportar resultados y crecer</strong> junto a una empresa que valore el compromiso, la responsabilidad y la excelencia profesional.</p>
+        </div>
+        <div class="sobre-mi-stats">
+          <div class="stat-card reveal">
+            <div class="stat-number">2+</div>
+            <div class="stat-label">Años en mantenimiento industrial</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-number">FP</div>
+            <div class="stat-label">Grado Superior en Electrónica</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-number">FS</div>
+            <div class="stat-label">Full Stack en formación</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-number">2</div>
+            <div class="stat-label">Idiomas (ES / EN)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       PROPUESTA DE VALOR
+  ═══════════════════════════════════════ -->
+  <section class="section propuesta" id="propuesta">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 — Propuesta de valor</span>
+        <h2>¿Qué puedo <span class="highlight">aportar</span>?</h2>
+      </div>
+      <div class="cards-grid">
+
+        <div class="value-card reveal">
+          <div class="value-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Responsabilidad y compromiso</h3>
+          <p>Asumo mis responsabilidades con seriedad, puntualidad y dedicación. Me esfuerzo por cumplir los objetivos y mantener un alto nivel de calidad en cada tarea.</p>
+        </div>
+
+        <div class="value-card reveal">
+          <div class="value-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Orientación a resultados</h3>
+          <p>Trabajo con mentalidad resolutiva, buscando soluciones prácticas y eficientes ante los problemas sin perder de vista los objetivos de la organización.</p>
+        </div>
+
+        <div class="value-card reveal">
+          <div class="value-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <h3>Aprendizaje continuo</h3>
+          <p>Tengo una mentalidad de crecimiento. Me interesa adquirir nuevos conocimientos, mejorar mis habilidades y mantenerme en constante evolución profesional.</p>
+        </div>
+
+        <div class="value-card reveal">
+          <div class="value-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Trabajo en equipo</h3>
+          <p>Valoro la colaboración, la comunicación y el respeto. Los mejores resultados se consiguen cuando las personas trabajan coordinadamente hacia un objetivo común.</p>
+        </div>
+
+        <div class="value-card reveal">
+          <div class="value-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>Iniciativa y adaptación</h3>
+          <p>Me adapto a diferentes entornos, herramientas y procedimientos. Identifico los problemas antes de que se conviertan en obstáculos y contribuyo a resolverlos.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       EXPERIENCIA
+  ═══════════════════════════════════════ -->
+  <section class="section experiencia" id="experiencia">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 — Experiencia</span>
+        <h2>Trayectoria <span class="highlight">profesional</span></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Operario de Mantenimiento Industrial</h3>
+                <span class="company">Empaquetaduras y Empaques S.A.S. · Colombia</span>
+              </div>
+              <span class="timeline-period">Mar 2023 – Sep 2024</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Mantenimiento preventivo y correctivo de maquinaria industrial.</li>
+              <li>Diagnóstico y reparación de extrusoras, motores industriales, inyectoras de plástico y maquinaria CNC.</li>
+              <li>Intervención en sistemas eléctricos y mecánicos.</li>
+              <li>Modelado y ajuste de piezas para maquinaria.</li>
+              <li>Identificación y resolución de averías en líneas de producción.</li>
+              <li>Colaboración en la mejora de procesos y reducción de tiempos de parada.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Analista / Soporte Técnico Industrial</h3>
+                <span class="company">Bavaria · Medellín, Colombia</span>
+              </div>
+              <span class="timeline-period">Ene 2022 – Abr 2023</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Análisis de datos operativos en procesos industriales.</li>
+              <li>Revisión y validación de diagramas de flujo.</li>
+              <li>Verificación del cumplimiento de procedimientos técnicos.</li>
+              <li>Aislamiento físico de conexiones eléctricas y mecánicas.</li>
+              <li>Inspecciones técnicas y apoyo al control de calidad.</li>
+              <li>Coordinación con equipos de mantenimiento y operaciones.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       HABILIDADES
+  ═══════════════════════════════════════ -->
+  <section class="section habilidades" id="habilidades">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 — Habilidades</span>
+        <h2>Competencias <span class="highlight">técnicas</span></h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-group reveal">
+          <div class="skill-group-icon">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>Mantenimiento y Electrónica Industrial</h3>
+          <div class="skill-tags">
+            <span class="tag">Mantenimiento preventivo</span>
+            <span class="tag">Mantenimiento correctivo</span>
+            <span class="tag">Diagnóstico de averías</span>
+            <span class="tag">Sistemas eléctricos</span>
+            <span class="tag">Sistemas mecánicos</span>
+            <span class="tag">Maquinaria CNC</span>
+            <span class="tag">Planos y diagramas</span>
+            <span class="tag">Aislamiento físico</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-group-icon">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <h3>Análisis y Operaciones</h3>
+          <div class="skill-tags">
+            <span class="tag">Análisis de datos operativos</span>
+            <span class="tag">Control de calidad (QA)</span>
+            <span class="tag">Supervisión técnica</span>
+            <span class="tag">Análisis de procesos</span>
+            <span class="tag">Seguridad industrial</span>
+            <span class="tag">Mejora continua</span>
+            <span class="tag">Control of Work (CoW)</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-group-icon">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Tecnología y Desarrollo de Software</h3>
+          <div class="skill-tags">
+            <span class="tag">Fundamentos de programación</span>
+            <span class="tag">Frontend (en formación)</span>
+            <span class="tag">Backend (en formación)</span>
+            <span class="tag">Bases de datos</span>
+            <span class="tag">Lógica de programación</span>
+            <span class="tag">Control de versiones</span>
+            <span class="tag">Desarrollo web</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Idiomas -->
+      <div class="languages reveal">
+        <h3>Idiomas</h3>
+        <div class="lang-grid">
+          <div class="lang-item">
+            <span class="lang-name">Español</span>
+            <div class="lang-bar"><div class="lang-fill" style="width: 100%"></div></div>
+            <span class="lang-level">Nativo</span>
+          </div>
+          <div class="lang-item">
+            <span class="lang-name">Inglés</span>
+            <div class="lang-bar"><div class="lang-fill" style="width: 55%"></div></div>
+            <span class="lang-level">Nivel medio</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FORMACIÓN
+  ═══════════════════════════════════════ -->
+  <section class="section formacion" id="formacion">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05 — Formación</span>
+        <h2>Preparación y <span class="highlight">evolución académica</span></h2>
+      </div>
+      <div class="education-grid">
+
+        <div class="edu-card reveal">
+          <div class="edu-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="edu-content">
+            <h3>FP Grado Superior en Electrónica</h3>
+            <span class="edu-institution">Institución Universitaria Pascual Bravo · Medellín, Colombia</span>
+            <span class="edu-period">Finalizado en 2024</span>
+            <span class="edu-badge badge-done">Completado</span>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-icon edu-icon-active">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <div class="edu-content">
+            <h3>Programación y Desarrollo Full Stack</h3>
+            <span class="edu-institution">ConquerBlocks · Madrid, España</span>
+            <span class="edu-period">Actualmente en formación</span>
+            <span class="edu-badge badge-active">En progreso</span>
+            <ul class="edu-topics">
+              <li>Desarrollo Frontend y Backend</li>
+              <li>Bases de datos</li>
+              <li>Lógica de programación</li>
+              <li>Control de versiones</li>
+              <li>Desarrollo de aplicaciones web</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FILOSOFÍA
+  ═══════════════════════════════════════ -->
+  <section class="section filosofia" id="filosofia">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">06 — Filosofía profesional</span>
+        <h2>Mi compromiso <span class="highlight">con el trabajo</span></h2>
+      </div>
+      <div class="filosofia-layout">
+        <blockquote class="filosofia-quote reveal">
+          "Creo firmemente que la diferencia entre cumplir con un trabajo y destacar profesionalmente está en la actitud con la que se afronta cada responsabilidad."
+        </blockquote>
+        <div class="filosofia-text reveal">
+          <p>Para mí, ser un buen profesional significa trabajar con honestidad, dedicación, disciplina y compromiso. Significa entender que cada tarea importa, que cada detalle cuenta y que siempre existe una oportunidad para aprender algo nuevo y hacerlo mejor.</p>
+          <p>No me conformo con quedarme en mi zona de confort. Me gusta avanzar, adquirir conocimientos, desarrollar nuevas habilidades y demostrarme a mí mismo que siempre puedo alcanzar un nivel superior.</p>
+          <p>Cuando asumo una responsabilidad, mi objetivo es dar lo mejor de mí, cumplir con las expectativas y, cuando sea posible, superarlas. Quiero ser ese profesional en quien una empresa pueda confiar plenamente: alguien que responde, que se implica, que aprende, que propone soluciones y que siempre busca entregar un trabajo excelente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CONTACTO / CTA FINAL
+  ═══════════════════════════════════════ -->
+  <section class="section contacto" id="contacto">
+    <div class="container">
+      <div class="contacto-box reveal">
+        <span class="section-tag">07 — Contacto</span>
+        <h2>¿Buscas un profesional comprometido<br /><span class="highlight">con la excelencia?</span></h2>
+        <p class="contacto-sub">Estoy preparado para asumir nuevos desafíos, aportar mis conocimientos y demostrar lo que puedo conseguir con dedicación, responsabilidad y trabajo constante. <strong>¿Hablamos?</strong></p>
+
+        <div class="contacto-info">
+          <a href="mailto:rogermedina1500@gmail.com" class="contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            rogermedina1500@gmail.com
+          </a>
+          <a href="tel:+34603240576" class="contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.42 2 2 0 0 1 3.6 1.26h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+            603 240 576
+          </a>
+          <span class="contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Madrid, España
+          </span>
+        </div>
+
+        <div class="contacto-social">
+          <a href="mailto:rogermedina1500@gmail.com" class="btn btn-primary btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Enviar email
+          </a>
+          <a href="https://www.linkedin.com/in/roger-medina-33854640a/" target="_blank" rel="noopener" class="btn btn-linkedin">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/rogermedina1500-dev" target="_blank" rel="noopener" class="btn btn-github">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Roger David Medina Gutiérrez — Hecho con dedicación en Madrid, España.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Volver arriba">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
