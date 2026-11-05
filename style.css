@@ -168,6 +168,7 @@ img { max-width: 100%; display: block; }
 .hero {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -222,10 +223,98 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-content {
-  max-width: 820px;
-  text-align: center;
+  flex: 1;
+  text-align: left;
   position: relative;
   z-index: 1;
+  max-width: 580px;
+}
+
+/* Layout de dos columnas */
+.hero-inner {
+  max-width: var(--max-w);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 72px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Foto de perfil ── */
+.hero-photo-wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* Anillo decorativo exterior */
+.hero-photo-ring {
+  position: absolute;
+  inset: -16px;
+  border-radius: 50%;
+  border: 1px solid rgba(79,142,247,0.2);
+  animation: ringPulse 3s ease-in-out infinite;
+}
+@keyframes ringPulse {
+  0%, 100% { transform: scale(1);   opacity: 0.6; }
+  50%       { transform: scale(1.04); opacity: 1;   }
+}
+
+.hero-photo-container {
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(79,142,247,0.35);
+  box-shadow:
+    0 0 0 8px rgba(79,142,247,0.06),
+    0 0 60px rgba(79,142,247,0.2),
+    0 24px 60px rgba(0,0,0,0.6);
+  position: relative;
+  animation: fadeInUp 0.8s 0.3s ease both;
+}
+
+.hero-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.hero-photo-container:hover .hero-photo {
+  transform: scale(1.04);
+}
+
+/* Badges flotantes sobre la foto */
+.hero-float-badge {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(13,15,20,0.9);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(79,142,247,0.25);
+  color: var(--clr-text);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 100px;
+  white-space: nowrap;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  animation: fadeInUp 0.8s 0.6s ease both;
+}
+.hero-float-badge svg { color: var(--clr-lime); flex-shrink: 0; }
+
+.badge-top {
+  top: 24px;
+  left: -48px;
+}
+.badge-bottom {
+  bottom: 32px;
+  right: -40px;
+  animation-delay: 0.75s;
 }
 
 .hero-badge {
@@ -302,7 +391,6 @@ img { max-width: 100%; display: block; }
 .hero-actions {
   display: flex;
   gap: 12px;
-  justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 44px;
   animation: fadeInUp 0.65s 0.34s ease both;
@@ -311,7 +399,6 @@ img { max-width: 100%; display: block; }
 .hero-social {
   display: flex;
   gap: 10px;
-  justify-content: center;
   animation: fadeInUp 0.65s 0.42s ease both;
 }
 
@@ -1147,6 +1234,22 @@ a.contact-item:hover { color: var(--clr-lime); }
   }
   .nav-links.open { right: 0; }
   .nav-links a { padding: 13px 18px; border-radius: 10px; width: 100%; }
+
+  /* Hero: una sola columna en móvil */
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 44px;
+    text-align: center;
+  }
+  .hero-content { text-align: center; max-width: 100%; }
+  .hero-actions { justify-content: center; }
+  .hero-social  { justify-content: center; }
+
+  .hero-photo-wrap { display: flex; justify-content: center; order: -1; }
+  .hero-photo-container { width: 220px; height: 220px; }
+  .hero-photo-ring { inset: -12px; }
+  .badge-top    { left: -20px; top: 10px; font-size: 0.68rem; padding: 6px 10px; }
+  .badge-bottom { right: -20px; bottom: 16px; font-size: 0.68rem; padding: 6px 10px; }
 
   .sobre-mi-grid { grid-template-columns: 1fr; gap: 44px; }
   .sobre-mi-stats { grid-template-columns: repeat(4, 1fr); }
